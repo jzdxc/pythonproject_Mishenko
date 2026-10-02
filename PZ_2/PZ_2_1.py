@@ -1,5 +1,7 @@
 #Дано трехзначное число. В нем зачеркнули первую слева цифру и приписали ее справа. Вывести результат
-number = input("Дано трехзачное число: ")
-result = number [1:] + number [0]
-print (result)
-
+number = input("Дано трехзначное число: ")
+while not number.isnumeric() or len(number) != 3:
+    print("Ошибка. Число должно быть трехзначным, без использования букв и символов")
+    number = input("Дано трехзначное число: ")
+result = number[1:] + number[0]
+print(result)
