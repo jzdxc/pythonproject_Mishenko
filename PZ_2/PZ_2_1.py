@@ -12,3 +12,4 @@ num_str = str(number)
 result = num_str[1:] + num_str[0]
 print(result)
 
+3
